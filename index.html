@@ -1,107 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UHAMKA Academic Website</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-        color: #333;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UHAMKA Academic Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
 
-      header {
-        background-color: #1e3a6b;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
+    header {
+      background-color: #1e3a6b;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
 
-      nav {
-        background-color: #1e3a6b;
-        overflow: hidden;
-      }
+    nav {
+      background-color: #1e3a6b;
+      overflow: hidden;
+    }
 
-      nav a {
-        float: left;
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-      }
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
 
-      nav a:hover {
-        background-color: #004080;
-      }
+    nav a:hover {
+      background-color: #004080;
+    }
 
-      section {
-        padding: 20px;
-      }
+    section {
+      padding: 20px;
+    }
 
-      .container {
-        margin: auto;
-        width: 95%; /* Perubahan lebar untuk perangkat seluler */
-        overflow: hidden;
-      }
+    .container {
+      margin: auto;
+      width: 95%; /* Perubahan lebar untuk perangkat seluler */
+      overflow: hidden;
+    }
 
-      .container p {
-        text-align: center;
-      }
+    .container p {
+      text-align: center;
+    }
 
-      .biodata {
-        border: 2px solid #1e3a6b;
-        border-radius: 5px;
-        padding: 20px;
-        margin-bottom: 20px;
-      }
+    .biodata {
+      border: 2px solid #1e3a6b;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
 
-      .biodata img {
-        display: block;
-        margin: auto;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-      }
+    .biodata img {
+      display: block;
+      margin: auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
 
-      .biodata h3 {
-        text-align: center;
-      }
+    .biodata h3 {
+      text-align: center;
+    }
 
-      .biodata p {
-        margin: 10px 0;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>UHAMKA Academic Website</h1>
-    </header>
-    <nav>
-      <a href="pembayaran.html">Pembayaran</a>
-      <a href="#tagihan">Tagihan</a>
-      <a href="#transkrip">Transkrip</a>
-      <a href="#kalender">Kalender</a>
-      <a href="#jadwal">Jadwal</a>
-      <a href="index.html">Home</a>
-    </nav>
+    .biodata p {
+      margin: 10px 0;
+    }
 
-    <section id="biodata-mahasiswa" class="container">
-      <div class="biodata">
-        <img src="foto cv.jpg" alt="Foto Mahasiswa" />
-        <h3>Muamar Azdiansyah</h3>
-        <p>NIM: 2103015036</p>
-        <p>Jurusan: Teknik Informatika</p>
-        <p>Semester: 6</p>
-        <p>IPK: 3.50</p>
-        <p>IPS: 3.80</p>
-        <p>Email: muamarazdiansyah1403@gmail.com</p>
-      </div>
-    </section>
-  </body>
+    .announcement {
+      background-color: #ffc107;
+      color: #333;
+      border: 2px solid #f0ad4e;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      animation: blink 1s infinite alternate;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>UHAMKA Academic Website</h1>
+  </header>
+  <nav>
+    <a href="pembayaran.html">Pembayaran</a>
+    <a href="#tagihan">Tagihan</a>
+    <a href="#transkrip">Transkrip</a>
+    <a href="#kalender">Kalender</a>
+    <a href="#jadwal">Jadwal</a>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <section id="biodata-mahasiswa" class="container">
+    <div class="biodata">
+      <img src="foto_cv.jpg" alt="Foto Mahasiswa" />
+      <h3>Muamar Azdiansyah</h3>
+      <p>NIM: 2103015036</p>
+      <p>Jurusan: Teknik Informatika</p>
+      <p>Semester: 6</p>
+      <p>IPK: 3.50</p>
+      <p>IPS: 3.80</p>
+      <p>Email: muamarazdiansyah1403@gmail.com</p>
+    </div>
+    <div class="announcement">
+      <p>Mohon perhatian! Anda terlambat membayar UKT. Silakan segera melakukan pembayaran agar dapat mengikuti bimbingan akademik Aisyiyah.</p>
+    </div>
+  </section>
+</body>
 </html>
